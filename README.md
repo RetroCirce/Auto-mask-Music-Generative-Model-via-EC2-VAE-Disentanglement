@@ -1,2 +1,18 @@
 # Auto-mask Music Generative Model via EC2-VAE Disentanglement
- Implementing EC2-VAE to the conditional generative model to generate music with controlling rhythm  patterns
+
+This is the work with this paper in IEEE International Conference on Semantic Computing ICSC 2020: (link in progress)
+
+We implement [EC2-VAE](https://github.com/cdyrhjohn/Deep-Music-Analogy-Demos) into the conditional generative model to let people generate the music melody in terms of controlling rhythm patterns and chord progressions, and even extra chord function labels.
+
+## See repo structure:
+* processed_data: processed Nottingham data in EC2-VAE latent vector sequences, due to the 100MB limits, we have some missing files [here](https://drive.google.com/drive/folders/1GJPUR1hxtIylAYutshP8z6_lc3MTFS2u?usp=sharing).
+* vae: EC2-VAE model
+* AmMGM_model_decode.ipynb: about how to use the trained model parameters to generate the music from train/valid/test dataset.
+* model_mask_cond: conditional generative model
+* train_AmMGM: training model file.
+* result: the vae_nottingham_output, model_generation_out, and 
+sample_for_presentation
+
+We did not provide the trained parameters in github, if you want find out both AmMGM-parameters and EC2-VAE-parameters we trained for this model, check out the [link](https://drive.google.com/drive/folders/1GJPUR1hxtIylAYutshP8z6_lc3MTFS2u?usp=sharing) here.
+
+
